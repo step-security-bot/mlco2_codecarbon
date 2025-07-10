@@ -1,0 +1,36 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /act
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /carbonserver/docker
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /dashboard
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /docker
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /webapp
+    schedule:
+      interval: daily
